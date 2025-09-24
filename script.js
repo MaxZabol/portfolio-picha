@@ -267,12 +267,14 @@
   });
 })();
 
-/* ================== Mobile "L-shape" headshot wrap ================== */
+/* ===== Mobile "L-shape" headshot wrap with precise alignment ===== */
 (() => {
   const hero      = document.querySelector('.hero');
   const heroCopy  = hero?.querySelector('.hero-copy');
   const heroPhoto = hero?.querySelector('.hero-photo');
-  if (!hero || !heroCopy || !heroPhoto) return;
+  const eyebrow   = hero?.querySelector('.eyebrow');
+  const subtitle  = hero?.querySelector('.hero-subtitle');
+  if (!hero || !heroCopy || !heroPhoto || !eyebrow || !subtitle) return;
 
   let floater = null;
 
@@ -280,11 +282,22 @@
     if (floater || window.innerWidth > 700) return;
     const img = heroPhoto.querySelector('img');
     if (!img) return;
+
     floater = img.cloneNode(true);
     floater.classList.add('hero-floater');
     floater.removeAttribute('loading');
     heroCopy.insertBefore(floater, heroCopy.firstElementChild);
+
+    // hide the original big photo while on mobile
     heroPhoto.style.display = 'none';
+
+    // once image is ready, size it
+    if (floater.complete) fitFloater();
+    else floater.addEventListener('load', fitFloater, { once:true });
+
+    // fonts can shift metrics; re-fit next frame as well
+    requestAnimationFrame(fitFloater);
+    setTimeout(fitFloater, 250);
   }
 
   function unmountFloater(){
@@ -294,11 +307,44 @@
     heroPhoto.style.display = '';
   }
 
-  function onResize(){
-    if (window.innerWidth <= 700) mountFloater();
-    else unmountFloater();
+  function clamp(n, min, max){ return Math.max(min, Math.min(max, n)); }
+
+  function fitFloater(){
+    if (!floater || window.innerWidth > 700) return;
+
+    // measurements
+    const copyRect    = heroCopy.getBoundingClientRect();
+    const eyebrowRect = eyebrow.getBoundingClientRect();
+    const subRect     = subtitle.getBoundingClientRect();
+
+    // align TOP of image to top of "Welcome to my world"
+    const topOffset = Math.max(0, Math.round(eyebrowRect.top - copyRect.top));
+    floater.style.marginTop = topOffset + 'px';
+
+    // desired height so BOTTOM matches bottom of the subtitle
+    // (bottom of subtitle relative to hero-copy top) - (floater top)
+    const desiredHeight = Math.round(subRect.bottom - copyRect.top - topOffset);
+
+    // keep it in a visually good range on small screens
+    const finalH = clamp(desiredHeight, 150, 280);
+    floater.style.height = finalH + 'px';
   }
 
-  window.addEventListener('resize', onResize, {passive:true});
-  onResize(); // run once
+  // responsiveness
+  const onResize = () => {
+    if (window.innerWidth <= 700){
+      if (!floater) mountFloater();
+      fitFloater();
+    } else {
+      unmountFloater();
+    }
+  };
+
+  window.addEventListener('resize', onResize, { passive:true });
+  window.addEventListener('orientationchange', onResize, { passive:true });
+  // try again after fonts/images settle
+  window.addEventListener('load', () => setTimeout(fitFloater, 0), { once:true });
+
+  // initial pass
+  onResize();
 })();

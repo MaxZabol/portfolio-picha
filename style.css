@@ -164,6 +164,18 @@ html{scroll-behavior:smooth}
     box-shadow:var(--shadow);
   }
 }
+/* Mobile L-wrap tuning */
+@media (max-width:700px){
+  .hero-floater{
+    float: right;
+    width: min(45%, 220px);     /* width stays responsive */
+    margin: 0 0 8px 12px;       /* left gutter from text */
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    object-fit: cover;          /* crop nicely when we set a JS height */
+    object-position: center;
+  }
+}
 
 html.noscroll, body.noscroll { overflow: hidden; }
 
