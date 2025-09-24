@@ -1,0 +1,301 @@
+<!-- Meta & fonts -->
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<!-- =================== NAV =================== -->
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a href="#top" class="brand"><span class="dot"></span> PI<span>CHA</span></a>
+
+    <!-- Desktop menu (always visible on PC) -->
+    <nav class="menu" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">What I Do</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Mobile hamburger -->
+    <button class="hamburger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <nav class="menu" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#services">What I Do</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- =================== HERO =================== -->
+<section class="hero" id="about">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Welcome to my world</p>
+      <h1 class="hero-title">Hi, I'm <span class="accent">Picha Nillawong</span></h1>
+      <p class="hero-subtitle">Senior Digital Modeler / Alias Designer</p>
+
+      <p class="lead">
+        Senior Digital Modeler / Alias Designer with 15+ years of experience in motorcycle, automotive, and advanced mobility design.
+        Specialized in Autodesk Alias and CATIA Class-A surfacing with deep expertise in transforming 2D sketches and scan data into
+        production-ready 3D models. Proven track record in leading complex surfacing projects, mentoring junior designers, and
+        collaborating with styling, engineering, and cross-functional teams to deliver high-quality, manufacturable designs.
+        Skilled in VRED visualization, supporting design studios and engineering teams to achieve world-class product designs.
+      </p>
+
+      <div class="quick-actions" id="quick-contacts">
+        <a class="qa" href="#quick-contacts"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+        <a class="qa" href="#quick-contacts"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+        <a class="qa" href="https://www.linkedin.com/in/picha-nillawong-09533220a" target="_blank" rel="noopener nofollow"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+        <a class="qa" href="https://wa.me/66648297829" target="_blank" rel="noopener nofollow"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+        <a class="qa" href="https://line.me/ti/p/gdvwcMYDmU" target="_blank" rel="noopener nofollow"><i class="fa-brands fa-line"></i><span>Line</span></a>
+      </div>
+
+      <ul class="facts">
+        <li><i class="fa-regular fa-circle-check"></i> Open to relocation, remote & full-time</li>
+        <li><i class="fa-regular fa-clock"></i> 15+ years experience</li>
+        <li><i class="fa-regular fa-star"></i> Team Member of the Year (2022)</li>
+      </ul>
+
+      <div class="cta-row">
+        <a class="btn btn-primary"
+           href="https://raw.githubusercontent.com/MaxZabol/resume/main/CV.pdf"
+           download="Picha_Nillawong_CV.pdf" target="_blank" rel="noopener">
+          <i class="fa-regular fa-file-pdf"></i> Download Resume (PDF)
+        </a>
+        <a class="btn btn-ghost" href="#portfolio">View Portfolio</a>
+      </div>
+    </div>
+
+    <!-- Desktop big image; on mobile it lifts above copy -->
+    <div class="hero-photo">
+      <img src="https://i.ibb.co/xS6XnBbP/76715.jpg" alt="Picha Nillawong headshot" loading="lazy" />
+      <div class="floating-card">
+        <i class="fa-solid fa-cubes"></i>
+        <div><strong>Class-A Surfacing</strong><p>Alias • CATIA • VRED</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SERVICES =================== -->
+<section class="section" id="services">
+  <div class="container">
+    <h2 class="section-title">What I Do</h2>
+    <div class="grid cards">
+      <article class="card"><i class="fa-solid fa-cube"></i><h3>3D Surface Modeling</h3><p>Autodesk Alias (NURBS/SubD), CATIA V5 (FSS/GSD/RE2), production Class-A/CAS.</p></article>
+      <article class="card"><i class="fa-solid fa-motorcycle"></i><h3>Motorcycle & Automotive</h3><p>Painted plastics, ergonomic bodywork, tanks, fairings, exterior panels.</p></article>
+      <article class="card"><i class="fa-solid fa-photo-film"></i><h3>Visualization</h3><p>VRED rendering, materials & lighting, studio reviews.</p></article>
+      <article class="card"><i class="fa-solid fa-people-group"></i><h3>Collaboration & Mentorship</h3><p>Partnering with styling & engineering; mentoring junior modelers.</p></article>
+      <article class="card"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Scan-to-Surface</h3><p>Mesh/scan cleanup, diagnostics (zebra, curvature comb), data prep.</p></article>
+      <article class="card"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Workflow Optimization</h3><p>Clay-less processes, schedule & recovery tactics.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PORTFOLIO =================== -->
+<section class="section" id="portfolio">
+  <div class="container">
+    <h2 class="section-title">My Portfolio</h2>
+    <p class="muted center">Tap a project to view the full-screen case study.</p>
+
+    <div class="grid portfolio">
+      <article class="p-card" data-project="trail" aria-label="Open Honda Trail 125 gallery">
+        <img class="thumb" referrerpolicy="no-referrer" src="https://i.ibb.co/7JH2BzFR/denis-niko-view-00.jpg" alt="Honda Trail 125 cover" loading="lazy" />
+        <div class="meta">
+          <span class="tag">Production</span>
+          <h3>Honda Trail 125</h3>
+          <p>Class-A surfacing & styling data for production.</p>
+          <button class="btn btn-ghost sm-view" type="button"><i class="fa-regular fa-image"></i> View</button>
+        </div>
+      </article>
+
+      <article class="p-card" data-project="click" aria-label="Open Honda Click 160 gallery">
+        <img class="thumb" referrerpolicy="no-referrer" src="https://i.ibb.co/TMdK769C/197952d88821491899ca3cf522b8cb9b.jpg" alt="Honda Click 160 cover" loading="lazy" />
+        <div class="meta">
+          <span class="tag">Production</span>
+          <h3>Honda Click 160</h3>
+          <p>Exterior components & manufacturable surfaces.</p>
+          <button class="btn btn-ghost sm-view" type="button"><i class="fa-regular fa-image"></i> View</button>
+        </div>
+      </article>
+
+      <article class="p-card" data-project="giorno" aria-label="Open Honda Giorno 125 gallery">
+        <img class="thumb" referrerpolicy="no-referrer" src="https://i.ibb.co/Pvk3Hyt0/2323.jpg" alt="Honda Giorno 125 cover" loading="lazy" />
+        <div class="meta">
+          <span class="tag">Concept → Production</span>
+          <h3>Honda Giorno 125</h3>
+          <p>Sub-D direction to NURBS Class-A refinement.</p>
+          <button class="btn btn-ghost sm-view" type="button"><i class="fa-regular fa-image"></i> View</button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Portfolio PDF preview + buttons -->
+    <div class="pdf-hover-wrap">
+      <div class="pdf-thumb">
+        <div class="pdf-thumb-left" role="button" tabindex="0" aria-expanded="false" aria-controls="pdfInlinePreview">
+          <i class="fa-regular fa-file-pdf"></i>
+          <div class="pdf-thumb-text">
+            <strong>Open Full Portfolio (Preview)</strong>
+            <span class="muted">Hover to preview • click to toggle on mobile</span>
+          </div>
+        </div>
+        <div class="pdf-thumb-actions">
+          <a id="previewDownloadBtn" class="btn btn-ghost btn-sm"
+             href="https://raw.githubusercontent.com/MaxZabol/Codepen/main/Portfolio%20Picha%20Nillawong%2011Sep.pdf"
+             download="Picha_Nillawong_Portfolio.pdf" target="_blank" rel="noopener">Download</a>
+          <button class="btn btn-primary btn-sm previewFullBtn" type="button">Preview</button>
+        </div>
+      </div>
+      <div class="pdf-preview" id="pdfInlinePreview" aria-hidden="true">
+        <div class="preview-slot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== RESUME =================== -->
+<section class="section" id="resume">
+  <div class="container">
+    <h2 class="section-title">My Resume</h2>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="experience" type="button"><i class="fa-solid fa-briefcase"></i> Experience</button>
+      <button class="tab" data-tab="skills" type="button"><i class="fa-solid fa-lightbulb"></i> Skills</button>
+      <button class="tab" data-tab="education" type="button"><i class="fa-solid fa-graduation-cap"></i> Education</button>
+      <button class="tab" data-tab="awards" type="button"><i class="fa-solid fa-award"></i> Awards</button>
+    </div>
+
+    <div class="tab-panels">
+      <div class="panel show" id="experience">
+        <div class="timeline">
+          <article class="t-card">
+            <header><h3>Bajaj Auto Thailand — Senior Digital Modeler / 3D Designer</h3><span>Bangkok, Thailand | 2023 – Present</span></header>
+            <ul>
+              <li>Created advanced 3D motorcycle surfaces using Autodesk Alias, transforming 2D sketches into production-ready Class-A surfaces.</li>
+              <li>Designed Class-B automotive exterior components (main body, bonnet, bumpers, roof panels).</li>
+              <li>Prepared 3D models for printing and validation, ensuring precision and production fidelity.</li>
+              <li>Collaborated with styling, engineering, and supplier teams to refine data for mass production.</li>
+              <li>Produced high-quality renderings and visualizations in Alias and VRED.</li>
+              <li>Mentored junior modelers in Alias and CATIA best practices.</li>
+            </ul>
+          </article>
+
+          <article class="t-card">
+            <header><h3>Honda R&amp;D Southeast Asia — Senior Digital Modeler / Class-A Surfacing</h3><span>Bangkok, Thailand | 2016 – 2023</span></header>
+            <ul>
+              <li>Led transition to “clay-less” digital workflows, reducing hours and manpower.</li>
+              <li>Managed project schedules and recovery strategies for tight deadlines.</li>
+              <li>Developed production-ready motorcycle components in CATIA (FSS/GSD/RE2).</li>
+              <li>Converted Alias sketches into Class-A surfaces ensuring manufacturability.</li>
+              <li>Partnered with engineering to optimize designs for production.</li>
+              <li>Delivered multiple models to production on time.</li>
+            </ul>
+          </article>
+
+          <article class="t-card">
+            <header><h3>Honda R&amp;D Southeast Asia — CAS Modeler / Surface Designer</h3><span>Bangkok, Thailand | 2008 – 2016</span></header>
+            <ul>
+              <li>Created initial Alias concept surfaces for motorcycle bodywork and refined them into Class-A.</li>
+              <li>Supported design reviews with high-quality VRED visualizations.</li>
+              <li>Advanced diagnostics and refinement (zebra analysis, curvature combs).</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="panel" id="skills">
+        <div class="grid cards">
+          <article class="card"><h3>3D Surface Modeling</h3><p>Autodesk Alias (NURBS/SubD), CATIA V5 (FSS, GSD, RE2, DSE), Class-A/CAS.</p></article>
+          <article class="card"><h3>Motorcycle &amp; Automotive Design</h3><p>Painted plastic parts, ergonomic bodywork, fuel tanks, fairings, body panels.</p></article>
+          <article class="card"><h3>Visualization &amp; Presentation</h3><p>VRED, Teamcenter/PLM, Scan-to-Surface.</p></article>
+          <article class="card"><h3>Collaboration &amp; Leadership</h3><p>Mentorship, cross-functional teamwork, workflow optimization.</p></article>
+        </div>
+      </div>
+
+      <div class="panel" id="education">
+        <div class="t-card">
+          <header><h3>B.Eng., Industrial Engineering</h3><span>Silpakorn University, Thailand | Second Class Honors</span></header>
+        </div>
+      </div>
+
+      <div class="panel" id="awards">
+        <div class="t-card">
+          <header><h3>Team Member of the Year (2022)</h3><span>Honda R&amp;D SEA</span></header>
+          <p>Recognized for digitizing workflows and mentoring colleagues.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="grid contact-grid">
+      <div class="contact-card">
+        <h3>Quick Contacts</h3>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-phone"></i> <span class="no-link">+1 646 980 4261</span> <span class="muted">(Calls only)</span></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:VaraaMax@gmail.com">VaraaMax@gmail.com</a></li>
+          <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/picha-nillawong-09533220a" target="_blank" rel="noopener nofollow">linkedin.com/in/picha-nillawong-09533220a</a></li>
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/66648297829" target="_blank" rel="noopener nofollow">WhatsApp</a></li>
+          <li><i class="fa-brands fa-line"></i> <a href="https://line.me/ti/p/gdvwcMYDmU" target="_blank" rel="noopener nofollow">Line</a></li>
+        </ul>
+      </div>
+
+      <form class="form" id="contactForm" action="https://formspree.io/f/mzzaqneg" method="POST" novalidate>
+        <div class="row">
+          <input required type="text" name="name" placeholder="Your Name" autocomplete="name" />
+          <input required type="email" name="email" placeholder="Your Email" autocomplete="email" />
+        </div>
+        <input required type="text" name="subject" placeholder="Subject" />
+        <textarea required name="message" rows="6" placeholder="Your Message"></textarea>
+        <input type="text" name="_gotcha" autocomplete="off" tabindex="-1" class="hp" />
+        <input type="hidden" name="_ts" id="formTs" />
+        <div id="formStatus" class="form-status" aria-live="polite"></div>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Picha Nillawong. All rights reserved.</p>
+    <div class="socials">
+      <a href="mailto:VaraaMax@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/picha-nillawong-09533220a" target="_blank" rel="noopener nofollow" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://wa.me/66648297829" target="_blank" rel="noopener nofollow" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://line.me/ti/p/gdvwcMYDmU" target="_blank" rel="noopener nofollow" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" hidden>
+  <button class="lb-btn lb-close" aria-label="Close (Esc)"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lb-btn lb-prev" aria-label="Previous (←)"><i class="fa-solid fa-chevron-left"></i></button>
+  <div class="lb-stage">
+    <img id="lbImg" alt="" />
+    <div class="lb-caption"><h3 id="lbTitle"></h3><p id="lbDesc"></p></div>
+  </div>
+  <button class="lb-btn lb-next" aria-label="Next (→)"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<!-- PDF MODAL -->
+<div id="pdfModal" class="pdf-modal" hidden>
+  <button class="pdf-close" aria-label="Close PDF (Esc)"><i class="fa-solid fa-xmark"></i></button>
+  <iframe id="pdfFrame" title="Portfolio PDF" loading="lazy"></iframe>
+</div>
