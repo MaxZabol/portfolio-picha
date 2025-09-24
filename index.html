@@ -17,7 +17,7 @@
   <div class="container nav-inner">
     <a href="#top" class="brand"><span class="dot"></span> PI<span>CHA</span></a>
 
-    <!-- Desktop menu (always visible on PC) -->
+    <!-- Desktop menu -->
     <nav class="menu" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#services">What I Do</a>
@@ -60,9 +60,10 @@
         Skilled in VRED visualization, supporting design studios and engineering teams to achieve world-class product designs.
       </p>
 
-      <div class="quick-actions" id="quick-contacts">
-        <a class="qa" href="#quick-contacts"><i class="fa-solid fa-phone"></i><span>Call</span></a>
-        <a class="qa" href="#quick-contacts"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+      <div class="quick-actions">
+        <!-- Jump to Quick Contacts card (works on mobile & desktop) -->
+        <a class="qa" href="#quick-contacts-target"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+        <a class="qa" href="#quick-contacts-target"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
         <a class="qa" href="https://www.linkedin.com/in/picha-nillawong-09533220a" target="_blank" rel="noopener nofollow"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
         <a class="qa" href="https://wa.me/66648297829" target="_blank" rel="noopener nofollow"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
         <a class="qa" href="https://line.me/ti/p/gdvwcMYDmU" target="_blank" rel="noopener nofollow"><i class="fa-brands fa-line"></i><span>Line</span></a>
@@ -84,7 +85,7 @@
       </div>
     </div>
 
-    <!-- Desktop big image; on mobile it lifts above copy -->
+    <!-- Desktop big image; on mobile the floater clone will L-wrap the text -->
     <div class="hero-photo">
       <img src="https://i.ibb.co/xS6XnBbP/76715.jpg" alt="Picha Nillawong headshot" loading="lazy" />
       <div class="floating-card">
@@ -117,11 +118,11 @@
     <p class="muted center">Tap a project to view the full-screen case study.</p>
 
     <div class="grid portfolio">
-      <article class="p-card" data-project="trail" aria-label="Open Honda Trail 125 gallery">
-        <img class="thumb" referrerpolicy="no-referrer" src="https://i.ibb.co/7JH2BzFR/denis-niko-view-00.jpg" alt="Honda Trail 125 cover" loading="lazy" />
+      <article class="p-card" data-project="trail" aria-label="Open Honda Hunter 125 gallery">
+        <img class="thumb" referrerpolicy="no-referrer" src="https://i.ibb.co/7JH2BzFR/denis-niko-view-00.jpg" alt="Honda Hunter 125 cover" loading="lazy" />
         <div class="meta">
           <span class="tag">Production</span>
-          <h3>Honda Trail 125</h3>
+          <h3>Honda Hunter 125</h3>
           <p>Class-A surfacing & styling data for production.</p>
           <button class="btn btn-ghost sm-view" type="button"><i class="fa-regular fa-image"></i> View</button>
         </div>
@@ -185,62 +186,80 @@
     </div>
 
     <div class="tab-panels">
+      <!-- EXPERIENCE -->
       <div class="panel show" id="experience">
         <div class="timeline">
+          <h3 class="resume-section">PROFESSIONAL EXPERIENCE</h3>
+
           <article class="t-card">
-            <header><h3>Bajaj Auto Thailand — Senior Digital Modeler / 3D Designer</h3><span>Bangkok, Thailand | 2023 – Present</span></header>
+            <header>
+              <h3>Bajaj Auto Thailand — Senior Digital Modeler / 3D Designer</h3>
+              <span>Bangkok, Thailand | 2023 – Present</span>
+            </header>
             <ul>
-              <li>Created advanced 3D motorcycle surfaces using Autodesk Alias, transforming 2D sketches into production-ready Class-A surfaces.</li>
-              <li>Designed Class-B automotive exterior components (main body, bonnet, bumpers, roof panels).</li>
+              <li>Created advanced 3D motorcycle surfaces using Autodesk Alias, transforming 2D sketches into production-ready Class-A surfaces through Alias SubD → Surface workflows.</li>
+              <li>Designed Class-B car exterior components by Alias (main body, bonnet, bumpers, roof panels).</li>
               <li>Prepared 3D models for printing and validation, ensuring precision and production fidelity.</li>
               <li>Collaborated with styling, engineering, and supplier teams to refine data for mass production.</li>
-              <li>Produced high-quality renderings and visualizations in Alias and VRED.</li>
-              <li>Mentored junior modelers in Alias and CATIA best practices.</li>
+              <li>Produced high-quality renderings and visualizations in Alias and VRED, applying advanced materials, lighting, and camera setups.</li>
+              <li>Mentored junior modelers in Alias and CATIA best practices, enhancing team capability and efficiency.</li>
             </ul>
           </article>
 
           <article class="t-card">
-            <header><h3>Honda R&amp;D Southeast Asia — Senior Digital Modeler / Class-A Surfacing</h3><span>Bangkok, Thailand | 2016 – 2023</span></header>
+            <header>
+              <h3>Honda R&amp;D Southeast Asia — Senior Digital Modeler / Class-A Surfacing</h3>
+              <span>Bangkok, Thailand | 2016 – 2023</span>
+            </header>
             <ul>
-              <li>Led transition to “clay-less” digital workflows, reducing hours and manpower.</li>
-              <li>Managed project schedules and recovery strategies for tight deadlines.</li>
-              <li>Developed production-ready motorcycle components in CATIA (FSS/GSD/RE2).</li>
-              <li>Converted Alias sketches into Class-A surfaces ensuring manufacturability.</li>
-              <li>Partnered with engineering to optimize designs for production.</li>
-              <li>Delivered multiple models to production on time.</li>
+              <li>Led transition from traditional clay modeling to digital (“clay-less”) workflows, significantly reducing work hours and manpower requirements.</li>
+              <li>Managed project schedules, task allocation, and recovery strategies to meet tight deadlines.</li>
+              <li>Developed production-ready motorcycle components in CATIA (FSS/GSD/RE2) from mesh and scan data.</li>
+              <li>Converted a 2D sketch into a SubD model and developed Class B surfaces in Alias, ensuring manufacturability and styling alignment with Class A surfaces in CATIA.</li>
+              <li>Partnered closely with engineering teams to optimize designs for functionality, manufacturability, and performance.</li>
+              <li>Delivered multiple motorcycle models into production on time.</li>
+              <li>Researched and adopted emerging design tools and workflows, driving innovation and continuous improvement.</li>
             </ul>
           </article>
 
           <article class="t-card">
-            <header><h3>Honda R&amp;D Southeast Asia — CAS Modeler / Surface Designer</h3><span>Bangkok, Thailand | 2008 – 2016</span></header>
+            <header>
+              <h3>Honda R&amp;D Southeast Asia — CAS Modeler / Surface Designer</h3>
+              <span>Bangkok, Thailand | 2008 – 2016</span>
+            </header>
             <ul>
-              <li>Created initial Alias concept surfaces for motorcycle bodywork and refined them into Class-A.</li>
-              <li>Supported design reviews with high-quality VRED visualizations.</li>
-              <li>Advanced diagnostics and refinement (zebra analysis, curvature combs).</li>
+              <li>Created initial Alias concept surfaces for motorcycle bodywork and refined them into Class-A surfaces by 3D Honda's program and Catia.</li>
+              <li>Supported design reviews with high-quality VRED visualizations for styling presentations.</li>
+              <li>Gained expertise in advanced surface diagnostics, quality analysis, and refinement (zebra analysis, curvature combs).</li>
             </ul>
           </article>
         </div>
       </div>
 
+      <!-- SKILLS -->
       <div class="panel" id="skills">
+        <h3 class="resume-section">SKILLS</h3>
         <div class="grid cards">
-          <article class="card"><h3>3D Surface Modeling</h3><p>Autodesk Alias (NURBS/SubD), CATIA V5 (FSS, GSD, RE2, DSE), Class-A/CAS.</p></article>
-          <article class="card"><h3>Motorcycle &amp; Automotive Design</h3><p>Painted plastic parts, ergonomic bodywork, fuel tanks, fairings, body panels.</p></article>
-          <article class="card"><h3>Visualization &amp; Presentation</h3><p>VRED, Teamcenter/PLM, Scan-to-Surface.</p></article>
-          <article class="card"><h3>Collaboration &amp; Leadership</h3><p>Mentorship, cross-functional teamwork, workflow optimization.</p></article>
+          <article class="card"><h3>3D Surface Modeling</h3><p>Autodesk Alias (NURBS/SubD), CATIA V5 (FSS, GSD, RE2, DSE), Class-A/CAS surfacing</p></article>
+          <article class="card"><h3>Motorcycle &amp; Automotive Design</h3><p>Painted plastic parts, ergonomic bodywork, fuel tanks, fairings, body panels</p></article>
+          <article class="card"><h3>Visualization &amp; Presentation</h3><p>VRED, Blender (basic), Teamcenter/PLM, Scan-to-Surface, advanced rendering techniques</p></article>
+          <article class="card"><h3>Collaboration &amp; Leadership</h3><p>Mentorship, cross-functional teamwork, design–engineering integration, workflow optimization</p></article>
         </div>
       </div>
 
+      <!-- EDUCATION -->
       <div class="panel" id="education">
+        <h3 class="resume-section">EDUCATION</h3>
         <div class="t-card">
           <header><h3>B.Eng., Industrial Engineering</h3><span>Silpakorn University, Thailand | Second Class Honors</span></header>
         </div>
       </div>
 
+      <!-- AWARDS -->
       <div class="panel" id="awards">
+        <h3 class="resume-section">AWARDS</h3>
         <div class="t-card">
-          <header><h3>Team Member of the Year (2022)</h3><span>Honda R&amp;D SEA</span></header>
-          <p>Recognized for digitizing workflows and mentoring colleagues.</p>
+          <p>Team Member of the Year (2022) — Honda R&amp;D SEA; recognized for digitizing workflows and mentoring colleagues to enhance surfacing capabilities.</p>
         </div>
       </div>
     </div>
@@ -252,7 +271,7 @@
   <div class="container">
     <h2 class="section-title">Contact Me</h2>
     <div class="grid contact-grid">
-      <div class="contact-card">
+      <div class="contact-card" id="quick-contacts-target">
         <h3>Quick Contacts</h3>
         <ul class="contact-list">
           <li><i class="fa-solid fa-phone"></i> <span class="no-link">+1 646 980 4261</span> <span class="muted">(Calls only)</span></li>
@@ -305,7 +324,7 @@
 
 <!-- PDF MODAL -->
 <div id="pdfModal" class="pdf-modal" hidden>
-  <button class="pdf-close" aria-label="Close PDF (Esc)"><i class="fa-solid fa-xmark"></i></button>
+  <button class="pdf-close" aria-label="Close PDF (Esc)"><i class="fa-solid fa-xmark"></i><span class="pdf-close-text"> Close</span></button>
   <iframe id="pdfFrame" title="Portfolio PDF" loading="lazy"></iframe>
 </div>
   <script  src="./script.js"></script>
